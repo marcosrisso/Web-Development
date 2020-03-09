@@ -1,2 +1,2 @@
-# git-FirstProject
-Primer proyecto de practica con Git, GitHub y HTML
+# git-FirstProjects
+Primeros proyectos de practica con HTML y CSS
