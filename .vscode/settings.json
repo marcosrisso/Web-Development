@@ -2,6 +2,6 @@
     "workbench.colorTheme": "Ayu Dark Lighter",
     "workbench.preferredDarkColorTheme": "Ayu Mirage Bordered",
     "workbench.preferredLightColorTheme": "Ayu Dark Bordered",
-    "workbench.iconTheme": "vscode-icons-mac",
+    "workbench.iconTheme": "vscode-great-icons",
     "workbench.preferredHighContrastColorTheme": "Material Theme"
 }
