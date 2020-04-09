@@ -1,0 +1,115 @@
+html {
+    text-align: center;
+}
+
+body {
+    margin: 0px;
+ 
+
+}
+
+h1 {
+    padding-top: 8%;
+    margin: 0 auto 0 auto;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 500%;
+    font-weight: lighter;
+  
+
+}
+
+h2 {
+    padding-bottom: 100px;
+    margin: 0 auto 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    
+
+}
+
+h3 {
+font-family: Arial, Helvetica, sans-serif
+;
+}
+
+p {
+
+}
+hr {
+    border: dotted;
+    border-bottom: 0px;
+    width: 7%;
+    margin: 100px auto 100px auto
+}
+
+.hello {
+    color: #ff5722;
+}
+.dev {
+    color: #dd2c00;
+}
+
+.mountain-image { 
+    
+    width: 600px;
+    height: auto;
+    margin: 0 auto 0 auto;
+    margin-bottom: -19px;
+
+
+   
+}
+
+.cloud-image {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 300px;
+    left: 200px;
+    bottom: 0px;
+    right: 0px;
+
+
+}
+.cloud-image2 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    margin-left: 70%;
+    margin-top: 28%;
+}
+
+.sun-image {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-left: 50%;
+    top: 100px;
+}
+
+.profile-image {
+    margin: 100px auto 100px auto;
+    width: 300px;
+    height: auto;
+}
+
+
+.top-div {
+    background-color: #00bcd4;
+
+
+}
+
+.middle-div {
+
+
+}
+
+.bottom-div {
+
+
+}
