@@ -169,17 +169,20 @@ margin-right: 500px;
 
 .top-div {
     background-color: #a1e6e3;
+    width: 100%;
 
 
 }
 
 .middle-div {
     background-color: #ffffff;
+    width: 100%;
 
 
 }
 
 .bottom-div {
+    width: 100%;
     background-color: teal;
     margin: 0px auto 0px auto;
     color: #48c0b6;
