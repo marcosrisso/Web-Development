@@ -1,0 +1,94 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* Main Section */
+
+h1 {
+    
+}
+.marcos {
+    font-family: 'Gochi Hand', cursive;
+    
+    color: rgb(139, 138, 138);
+    font-size: 400%;
+}
+.marcos2 {
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 120%;
+
+}
+#nav1 {
+    background-color: #FFFFFF;
+   padding: 1%;
+    font-size: 100%;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    font-size: 90%;
+    
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    color: rgb(163, 163, 163);
+    
+}
+section {
+    background: url(../Images/8.jpg) fixed center center no-repeat;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    padding: 0%;
+}
+ 
+ul {
+    font-size: 90%;
+    padding: 2%;
+    text-align: center;
+    color: darkgray;
+}
+.landingText {
+    
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+#Main {
+    background: url(../Images/8.png); no-repeat center center fixed;
+     display: table;
+     height: 100%;
+     position: relative;
+     width: 100%;
+     background-size: cover;
+}
+
+#link2 {
+    text-decoration: none;
+    color: #8e928d;
+    
+    
+}link2:active {
+    color:#941eb2;
+}link2:visited {
+    color: #1b6b64;
+}link2:hover {
+    color: #023632;
+ }
+
+
+
+
+
+
+
+
+
+
+
