@@ -11,7 +11,6 @@ h1 {
 }
 .marcos {
     font-family: 'Gochi Hand', cursive;
-    
     color: rgb(139, 138, 138);
     font-size: 400%;
 }
@@ -22,7 +21,7 @@ h1 {
 }
 #nav1 {
     background-color: #FFFFFF;
-   padding: 1%;
+    padding: 1%;
     font-size: 100%;
     padding-right: 8rem;
     padding-left: 8rem;
@@ -34,7 +33,42 @@ h1 {
 h2 {
     font-family: 'Lato', sans-serif;
     color: rgb(163, 163, 163);
+    font-size: 20%;
+
+}
+
+#h3s {
+    font-family: 'Baloo Tamma 2', cursive;
+    color: rgb(143, 143, 143);
+    font-size: 150%;
     
+
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(110, 108, 108);
+    font-size: 10%;
+    width: 80%;
+    margin: 0% auto 0% auto;
+
+}
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30%;
+    color: darkgray;
+    padding: 1%;
+}
+
+p {
+    font-family: sans-serif;
+    color: rgb(187, 186, 186);
+    width: 40%;
+    margin: 0% auto 0% auto;
+    line-height: 2;
+    font-size: 90%;
+    height: auto;
+    padding: 1%;
 }
 section {
     background: url(../Images/8.jpg) fixed center center no-repeat;
@@ -59,14 +93,34 @@ ul {
     vertical-align: middle;
 }
 
+#h41 {
+    font-size: 110%;
+}
+#imgs {
+    width: 15%;
+    height: auto;
+  
+}
+#imgs2 {
+    width: 15%;
+    height: auto;
+ 
+}
 
-#Main {
-    background: url(../Images/8.png); no-repeat center center fixed;
-     display: table;
-     height: 100%;
-     position: relative;
-     width: 100%;
-     background-size: cover;
+
+
+
+#conts {
+    padding: 0%;
+    
+    
+}
+
+
+
+#button {
+    text-decoration: none;
+    margin: 2%;
 }
 
 #link2 {
@@ -75,18 +129,104 @@ ul {
     
     
 }link2:active {
-    color:#941eb2;
+    color:#9b999b;
 }link2:visited {
-    color: #1b6b64;
+    color: #939695;
 }link2:hover {
-    color: #023632;
+    color: #bebebe;
+ }
+ #footer {
+     padding: 1%;
+     background-color: rgb(236, 236, 236);
+     text-align: center;
+ }
+#social {
+    font-family: 'Baloo Tamma 2', cursive;
+    color: rgb(139, 138, 138);
+    font-size: 90%;
+    text-decoration: none;
+    padding: 1%;
+    
+    
+}
+
+#message {
+    font-size: 70%;
+    padding: 1%;
+    width: 80%;
+    margin: 0% auto 1% auto;
+}
+
+#icon {
+    color: darkgray;
+    text-align: center;
+   
+}
+
+ #copy {
+     font-size: 60%;
+     color: rgb(139, 138, 138);
+     
  }
 
+.container-fluid {
+    text-align: center;
+    line-height: 2;
+}
 
+hr {
+    width: 10%;
+    padding: 2%;
+   
+    
+}
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+    color: gray;
+}
 
-
-
-
+#btn {
+    margin: 20px auto 30px;
+        -moz-box-shadow:inset 0px 1px 0px 0px #e9f2f2;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #e9f2f2;
+        box-shadow:inset 0px 1px 0px 0px #e9f2f2;
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d0ede8), color-stop(1, #b2b4b4) );
+        background:-moz-linear-gradient( center top, #a7a8a8 5%, #e2e4e3 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0ede8', endColorstr='#a7a8a8');
+        background-color:#888888;
+        -webkit-border-top-left-radius:5px;
+        -moz-border-radius-topleft:5px;
+        border-top-left-radius:5px;
+        -webkit-border-top-right-radius:5px;
+        -moz-border-radius-topright:5px;
+        border-top-right-radius:5px;
+        -webkit-border-bottom-right-radius:5px;
+        -moz-border-radius-bottomright:5px;
+        border-bottom-right-radius:5px;
+        -webkit-border-bottom-left-radius:5px;
+        -moz-border-radius-bottomleft:5px;
+        border-bottom-left-radius:5px;
+    text-indent:0;
+        display:inline-block;
+        color:#8c8d8d;
+        font-family:arial;
+        font-size:15px;
+        font-weight:bold;
+        font-style:normal;
+    height:50px;
+        line-height:50px;
+    width:140px;
+        text-decoration:none;
+        text-align:center;
+        text-shadow:0px 1px 0px #aeb1b1;
+    }
+    #btn:hover {
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c0c2c2), color-stop(1, #d0ede8) );
+        background:-moz-linear-gradient( center top, #adadad 5%, #d0ede8 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a7a8a8', endColorstr='#d0ede8');
+        background-color:#969797;
+   
 
 
 
