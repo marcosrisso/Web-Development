@@ -34,6 +34,13 @@ h1 {
   border-bottom: 0;
 }
 
+.text-secondary {
+  margin-top: 20%;
+  font-size: 80%;
+  font-weight: bold;
+  color: rgb(226, 222, 222);
+}
+
 input:checked+p {
   text-decoration: line-through;
   text-decoration-color: #A683E3;
