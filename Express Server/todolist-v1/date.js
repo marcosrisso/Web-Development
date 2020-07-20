@@ -14,7 +14,7 @@ let day = today.toLocaleDateString('en-US', options);
 return day;
 }
 
-// Module refactoring example
+// Module refactoring example final
 
 exports.getDay = function () {
 
