@@ -69,9 +69,7 @@ console.log(req.body);
     res.redirect('/');
   }
 
-
 });
-
 
 app.get('/work', function (req, res) {
   res.render('list', {listTitle: 'Work List', newListItems: workItems});
