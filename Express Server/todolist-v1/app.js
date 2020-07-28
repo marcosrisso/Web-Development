@@ -48,9 +48,6 @@ const listSchema = {
 
 const List = mongoose.model('List', listSchema);
 
-
-
-
 app.get('/', function (req, res) {
 let day = date();
 
@@ -91,7 +88,6 @@ app.get('/:customListName', function (req, res) {
     }
   });
 });
-
 
 
 app.post('/', function (req, res) {
