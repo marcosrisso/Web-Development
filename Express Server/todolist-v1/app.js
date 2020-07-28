@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const date = require(__dirname + '/date.js');
 const app = express();
+const _ = require('lodash');
 
 app.set('view engine', 'ejs');
 
@@ -69,7 +70,7 @@ let day = date();
 });
 
 app.get('/:customListName', function (req, res) {
-  const customListName = req.params.customListName;
+  const customListName = _.capitaize(req.params.customListName);
 
   List.findOne({name: customListName}, function (err, foundList){
     if (!err) {
@@ -117,16 +118,24 @@ let day = date();
 
 app.post('/delete', function (req, res) {
   const checkboxItemId = req.body.checkbox;
+  const listName = req.body.listName;
 
-  Item.findByIdAndRemove(checkboxItemId, function (err){
-  if (!err) {
-    console.log('Successfully deleted');
-    res.redirect('/');
+  let day = date();
+
+  if (listName == date) {
+    Item.findByIdAndRemove(checkboxItemId, function (err){
+      if (!err) {
+        console.log('Successfully deleted');
+        res.redirect('/');
+    }});
+  } else {
+    List.findOneAndUpdate({name: listName}, {$pull: {items: {_id: checkboxItemId}}}, function (err, foundList){
+      if (!err) {
+        console.log('Successfully deleted');
+        res.redirect('/' + listName);
+    }
   }
-
-});
-});
-
+);}});
 
 app.get('/work', function (req, res) {
   res.render('list', {listTitle: 'Work List', newListItems: workItems});
