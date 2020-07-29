@@ -52,7 +52,7 @@ const List = mongoose.model('List', listSchema);
 app.get('/', function (req, res) {
 let day = date();
 
-  Item.find(( {}, function (err, foundItems) {
+  Item.find( {}, function (err, foundItems) {
     if (foundItems.length === 0) {
       Item.insertMany(defaultItems, function (err) {
         if (err) {
@@ -66,7 +66,7 @@ let day = date();
     res.render('list', {listTitle: day, newListItems: foundItems});
   }
 }
-));
+);
 });
 
 app.get('/:customListName', function (req, res) {
