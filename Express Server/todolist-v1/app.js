@@ -14,16 +14,16 @@ app.use(express.static('public'));
 
 
 mongoose.connect('mongodb://localhost:27017/todolistDB',
- {useNewUrlParser: true, useUnifiedTopology: true }
+ {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
 );
 
 
 // itemSchema
-const itemSchema = {
+const itemsSchema = {
   name: String
 };
 
-const Item = mongoose.model('Item', itemSchema);
+const Item = mongoose.model('Item', itemsSchema);
 
 const item1 = new Item ({
   name: 'Welcome to your to-do list'
@@ -44,7 +44,7 @@ const defaultItems = [item1, item2, item3];
 
 const listSchema = {
   name: String,
-  items: [itemSchema]
+  items: [itemsSchema]
 };
 
 const List = mongoose.model('List', listSchema);
@@ -61,7 +61,7 @@ let day = date();
           console.log('Items successfully added');
         }
       });
-      res.redirect('/');
+      res.redirect('/Home');
     } else {
     res.render('list', {listTitle: day, newListItems: foundItems});
   }
@@ -70,7 +70,7 @@ let day = date();
 });
 
 app.get('/:customListName', function (req, res) {
-  const customListName = _.capitaize(req.params.customListName);
+  const customListName = _.capitalize(req.params.customListName);
 
   List.findOne({name: customListName}, function (err, foundList){
     if (!err) {
@@ -104,11 +104,13 @@ let day = date();
 
   if (listName === day) {
     item.save();
-    res.redirect('/');
+    console.log('Successfully added');
+    res.redirect('/Home');
   } else {
     List.findOne({name: listName}, function (err, foundList){
       foundList.items.push(item);
       foundList.save();
+      console.log('Successfully added');
       res.redirect('/' + listName);
 
     }
@@ -122,7 +124,7 @@ app.post('/delete', function (req, res) {
 
   let day = date();
 
-  if (listName == date) {
+  if (listName === day) {
     Item.findByIdAndRemove(checkboxItemId, function (err){
       if (!err) {
         console.log('Successfully deleted');
