@@ -52,7 +52,7 @@ const List = mongoose.model('List', listSchema);
 app.get('/', function (req, res) {
 let day = date();
 
-  Item.find(( {}, function (err, foundItems) {
+  Item.find( {}, function (err, foundItems) {
     if (foundItems.length === 0) {
       Item.insertMany(defaultItems, function (err) {
         if (err) {
@@ -66,11 +66,11 @@ let day = date();
     res.render('list', {listTitle: day, newListItems: foundItems});
   }
 }
-));
+);
 });
 
 app.get('/:customListName', function (req, res) {
-  const customListName = _.capitaize(req.params.customListName);
+  const customListName = _.capitalize(req.params.customListName);
 
   List.findOne({name: customListName}, function (err, foundList){
     if (!err) {
@@ -122,7 +122,7 @@ app.post('/delete', function (req, res) {
 
   let day = date();
 
-  if (listName == date) {
+  if (listName === day) {
     Item.findByIdAndRemove(checkboxItemId, function (err){
       if (!err) {
         console.log('Successfully deleted');
