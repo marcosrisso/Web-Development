@@ -2,6 +2,11 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+.navbar-nav  li#compose {
+    color: #ff742f !important;
+}
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -32,4 +37,8 @@
 	margin-top: 25px;
 	font-size: 12px;
   color: #fff;
+}
+
+#composelink {
+    color: rgb(73, 167, 255);
 }
