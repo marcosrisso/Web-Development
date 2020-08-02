@@ -78,9 +78,46 @@ app.route('/articles')
 .put(function (req, res) {
   Article.update({
     title: req.params.articleTitle},
-    {title: req.body.title, content: req.body.content}
+    {title: req.body.title, content: req.body.content},
+    {overwrite: true},
+    function (err) {
+      if (!err) {
+        res.send('Successfully updated');
+      }
+    }
+  );
+})
+
+.patch(function (req, res) {
+  Article.update (
+    {title: req.params.articleTitle},
+    {$set: req.body},
+    function (err) {
+      if (!err) {
+        res.send('Successfully updated content');
+      }
+    }
+  );
+})
+
+
+.delete(function (req, res) {
+  Article.deleteOne(
+    {title: req.params.articleTitle},
+    function (err) {
+      if (!err) {
+        res.send('Article deleted');
+      } else {
+        res.send(err);
+      }
+    }
   );
 });
+
+
+
+
+
 
 
 // app.get('/articles', );
