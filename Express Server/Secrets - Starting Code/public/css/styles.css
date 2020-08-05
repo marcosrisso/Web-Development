@@ -14,3 +14,25 @@ body {
   color: #fff;
   background-color: #000;
 }
+
+.btn-google {
+  background-color: #dd340f;
+
+}
+
+.btn-google:hover {
+  background-color: #dd340f;
+}
+
+.display-3 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 400%;
+  padding-top: 4%;
+}
+
+.btn {
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 10rem;
+}
