@@ -21,7 +21,7 @@ body {
 }
 
 .btn-google:hover {
-  background-color: #dd340f;
+  background-color: #c1210c;
 }
 
 .display-3 {
@@ -31,8 +31,8 @@ body {
   padding-top: 4%;
 }
 
-.btn {
+.btn-mains {
   margin-left: 2%;
   margin-right: 2%;
-  width: 10rem;
+  width: 11rem;
 }
