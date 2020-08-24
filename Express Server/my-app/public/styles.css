@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
+  background-color: #413942;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
   padding: 0 16px;
 }
 
@@ -21,7 +22,7 @@ header {
 header h1 {
   color: #fff;
   font-family: "Helvetica", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 footer {
@@ -59,17 +60,16 @@ footer p {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #ffffff;
+  color: hsl(44, 100%, 49%);
   border: none;
-  width: 30%;
-  height: auto;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
   outline: none;
-  background-color: #f5ba13;
-  border-radius: 10px;
+  background-color: transparent;
 }
 
-form {
+form.create-note {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
@@ -78,8 +78,8 @@ form {
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
-form input,
-form textarea {
+form.create-note input,
+form.create-note textarea {
   width: 100%;
   border: none;
   padding: 4px;
@@ -88,7 +88,7 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
-form button {
+form.create-note button {
   position: absolute;
   right: 18px;
   bottom: -18px;
@@ -98,7 +98,6 @@ form button {
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
 }
